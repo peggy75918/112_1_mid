@@ -1,12 +1,14 @@
 import { Row, Col } from "antd";
 
 import WorkItem from "../WorkItem"
+import Option from "../Option";
 import styles from "./worklist.module.css"
 
 function WorkList( { works, school , semester } ) {
 
     return(
         <div className={styles.container}>
+            <Option school={school} />
             <Row gutter={[32,32]}>
                 {works.map((e, idx) => {
                     if(e.workName.length > 0) return (
