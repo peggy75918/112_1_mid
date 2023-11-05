@@ -11,7 +11,9 @@ function WorkItem({ data, school, semester }) {
     return(
         <div className={styles.port_work_base}>
             <div className={styles.port_work_view}><EyeFilled style={{ paddingRight: '4px' }}/>114514</div>
-            <div><img className={styles.port_work_img} onError={add404Img} src={data.imgUrl}></img></div>
+            <a href={data.websiteUrl}>
+                <img className={styles.port_work_img} onError={add404Img} src={data.imgUrl}></img>
+            </a>
             <div>
                 <div className={styles.port_work_info_base}>
                     <div className={styles.port_work_info_left}>
@@ -26,7 +28,10 @@ function WorkItem({ data, school, semester }) {
                         </div>
                     </div>
                     <div className={styles.port_work_info_right}>
-                        <div className={styles.port_work_icons}><FilePptFilled style={{ paddingRight: '8px' }} /><GithubFilled /></div>
+                        <div className={styles.port_work_icons}>
+                            <a href={data.pptUrl} href={data.pptUrl} target="_blank"><FilePptFilled style={{ paddingRight: '8px' , color: '#492D85' }} /></a>
+                            <a href={data.githubUrl} href={data.pptUrl} target="_blank"><GithubFilled style={{ color: '#492D85' }} /></a>
+                        </div>
                         <div className={styles.port_work_hearts}><HeartOutlined style={{ paddingRight: '8px' }}/>114514</div>
                     </div>
                 </div>
