@@ -11,7 +11,7 @@ function WorkItem({ data, school, semester }) {
     return(
         <div className={styles.port_work_base}>
             <div className={styles.port_work_view}><EyeFilled style={{ paddingRight: '4px' }}/>114514</div>
-            <a href={data.websiteUrl}>
+            <a href={data.websiteUrl} target="_blank">
                 <img className={styles.port_work_img} onError={add404Img} src={data.imgUrl}></img>
             </a>
             <div>
