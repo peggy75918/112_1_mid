@@ -1,0 +1,168 @@
+.port_nav_base {
+    position: fixed;
+    top: 0;
+    background: #492D85;
+    width: 100vw;
+    height: 69px;
+    max-width: 100%;
+    z-index: 1;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    height: 100%;
+    margin: auto;
+}
+
+/* sm */
+@media (min-width: 576px) {
+    .container {
+      width: 540px;
+    }
+}  
+
+  /* md */
+@media (min-width: 768px) {
+    .container {
+      width: 720px;
+    }
+}
+  
+  /* lg */
+@media (min-width: 992px) {
+    .container {
+      width: 960px;
+    }
+}
+  
+  /* xl */
+@media (min-width: 1200px) {
+    .container {
+      width: 1140px;
+    }
+}
+
+  /* xxl */
+@media (min-width: 1600px) {
+    .container {
+      width: 1500px;
+    }
+}
+
+.container2{
+    display: flex;
+    align-items: center;
+}
+
+.port_home_btn {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+  
+.port_home_icon {
+    margin-right: 10px;
+}
+  
+.port_search_base {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+  
+    color: #492D85;
+  
+    width: 500px;
+    height: 29px;
+    border-radius: 16px;
+    background: #ffffff;
+}
+  
+.port_search_icon {
+    position: relative;
+    top: 30%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+}
+
+.port_school_base {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+  
+    width: 83px;
+    height: 42px;
+    border-radius: 21px;
+    background: #d0c5e9;
+    margin-left: 3vw;
+  
+    text-align: center;
+    font-size: 6px;
+}
+
+/* sm */
+@media (min-width: 576px) {
+  .port_search_base{
+    width: 300px;
+  }
+  .port_school_base {
+    margin-left: 2.5vw;
+  }
+}  
+
+/* md */
+@media (min-width: 768px) {
+  .port_search_base{
+    width: 450px;
+  }
+  .port_school_base {
+    margin-left: 4vw;
+  }
+}
+
+/* lg */
+@media (min-width: 992px) {
+  .port_search_base{
+    width: 500px;
+  }
+  .port_school_base {
+    margin-left: 12vw;
+  }
+}
+
+/* xl */
+@media (min-width: 1200px) {
+  .port_school_base {
+    margin-left: 20vw;
+  }
+}
+
+/* xxl */
+@media (min-width: 1600px) {
+  .port_school_base {
+    margin-left: 20vw;
+  }
+}
+  
+.port_school_btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    height: 100%;
+}
+  
+.port_school_icon {
+    margin-bottom: 4px;
+}
+  
+.port_school_text {
+    margin: 0px;
+    color: #845FD4;
+}

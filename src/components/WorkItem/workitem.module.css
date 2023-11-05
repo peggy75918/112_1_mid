@@ -1,0 +1,106 @@
+.port_work_base {
+    height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    
+  
+    font-family: SoukouMincho;
+    gap: 12px;
+
+}
+  
+.port_work_view {
+    position: absolute;
+    width: max-content;
+    padding: 4px;
+    font-size: 18px;
+}
+
+.port_work_img {
+    height: 225px;
+    width: 300px;
+}
+
+.port_work_img:hover {
+    content: url(images/img_NTUEphoto_Hover.png);
+}
+  
+.port_work_info_base {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  
+    height: fit-content;
+}
+  
+.port_work_info_left {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    gap: 8px;
+    
+    line-height: normal;
+}
+  
+.port_work_title {
+    font-size: 18px;
+    margin: 0px;
+  
+    color: #000000;
+}
+  
+.port_work_team {
+    font-size: 14px;
+    margin: 0px;
+  
+    color: #9A9A9A
+}
+  
+.port_work_tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    max-width: 200px;
+}
+
+.port-filter-btn {
+    color: #393939;
+    font-size: 14px;
+  
+    border-radius: 10px;
+    padding: 10px 10px 8px 10px;
+
+}
+
+.port_work_info_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+  
+.port_work_icons {
+    display: flex;
+    flex-direction: row;
+  
+    font-size: 24px;
+}
+  
+.port_work_hearts {
+    color: #e77474;
+    font-size: 18px;
+    width: max-content;
+}
+
+/* md */
+@media (max-width: 768px) {
+    .port_work_base {
+        width: 400px;
+    }
+    .port_work_img {
+        height: 300px;
+        width: 400px;
+    }
+}

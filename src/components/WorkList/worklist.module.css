@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    justify-self: center;
+    height: 100%;
+    margin-top: 150px;
+}
+
+.col{
+    display: flex;
+    justify-content: center;
+}
+
+/* sm */
+@media (min-width: 576px) {
+
+}  
+
+  /* md */
+@media (min-width: 768px) {
+    
+}
+  
+  /* lg */
+@media (min-width: 992px) {
+    
+}
+  
+  /* xl */
+@media (min-width: 1200px) {
+
+}
+
+  /* xxl */
+@media (min-width: 1600px) {
+    
+}
