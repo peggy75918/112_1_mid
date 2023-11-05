@@ -29,8 +29,8 @@ function WorkItem({ data, school, semester }) {
                     </div>
                     <div className={styles.port_work_info_right}>
                         <div className={styles.port_work_icons}>
-                            <a href={data.pptUrl} href={data.pptUrl} target="_blank"><FilePptFilled style={{ paddingRight: '8px' , color: '#492D85' }} /></a>
-                            <a href={data.githubUrl} href={data.pptUrl} target="_blank"><GithubFilled style={{ color: '#492D85' }} /></a>
+                            <a href={data.pptUrl} target="_blank"><FilePptFilled style={{ paddingRight: '8px' , color: '#492D85' }} /></a>
+                            <a href={data.githubUrl} target="_blank"><GithubFilled style={{ color: '#492D85' }} /></a>
                         </div>
                         <div className={styles.port_work_hearts}><HeartOutlined style={{ paddingRight: '8px' }}/>114514</div>
                     </div>
