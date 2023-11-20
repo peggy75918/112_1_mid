@@ -21,13 +21,13 @@ export default function Navbar( {school} ) {
                         <div className={styles.port_school_base}>
                             <Link to='/ntue'>
                                 <div className={styles.port_school_btn}>
-                                    <img className={styles.port_school_icon} src={school=='ntue'? 'images/Radiobtn_NTUE_Active.png' : 'images/Radiobtn_NTUE_Default.png'} />
+                                    <img className={styles.port_school_icon} src={school=='ntue'? '/images/Radiobtn_NTUE_Active.png' : '/images/Radiobtn_NTUE_Default.png'} />
                                     <p className={styles.port_school_text}>NTUE</p>
                                 </div>
                             </Link>
                             <Link to='/ntut'>
                                 <div className={styles.port_school_btn}>
-                                    <img className={styles.port_school_icon} src={school=='ntut'? 'images/Radiobtn_NTUT_Active.png' : 'images/Radiobtn_NTUT_Default.png'}/>
+                                    <img className={styles.port_school_icon} src={school=='ntut'? '/images/Radiobtn_NTUT_Active.png' : '/images/Radiobtn_NTUT_Default.png'}/>
                                     <p className={styles.port_school_text}>NTUT</p>
                                 </div>
                             </Link>
