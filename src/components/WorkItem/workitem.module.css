@@ -17,15 +17,25 @@
     font-size: 18px;
 }
 
-.port_work_img {
+.port_work_img1 {
     height: 225px;
     width: 300px;
 }
 
-.port_work_img:hover {
-    content: url(images/img_NTUEphoto_Hover.png);
+.port_work_img2 {
+    height: 225px;
+    width: 300px;
 }
-  
+
+.port_work_img1:hover {
+    content: url(/images/img_NTUEphoto_Hover.png);
+}
+
+.port_work_img2:hover {
+    content: url(/images/img_NTUTphoto_Hover.png);
+}
+
+
 .port_work_info_base {
     display: flex;
     flex-direction: row;
@@ -99,8 +109,13 @@
     .port_work_base {
         width: 400px;
     }
-    .port_work_img {
+    .port_work_img1 {
         height: 300px;
         width: 400px;
     }
+    .port_work_img2 {
+        height: 300px;
+        width: 400px;
+    }
+    
 }

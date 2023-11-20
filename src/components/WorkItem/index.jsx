@@ -1,18 +1,27 @@
 import { EyeFilled, FilePptFilled, GithubFilled, HeartOutlined } from '@ant-design/icons';
 import styles from "./workitem.module.css"
-import img_404_e from "../../assets/images/img_NTUEphoto_Default@2x.png"
-import img_404_t from "../../assets/images/img_NTUTphoto_Default@2x.png"
+import img_404_e from "/images/img_NTUEphoto_Default@2x.png"
+import img_404_t from "/images/img_NTUTphoto_Default@2x.png"
 
 function WorkItem({ data, school, semester }) {
     const add404Img = (ev) => {
         {school == "ntue" ? ev.target.src = img_404_e : ev.target.src = img_404_t}
       }
+
+    const getStatusStyle = (school) => {
+        if (school == "ntue")  
+            return styles.port_work_img1;
+        else
+            return styles.port_work_img2;
+      }
+
+    const dynamicStyle = getStatusStyle(school);
    
     return(
         <div className={styles.port_work_base}>
             <div className={styles.port_work_view}><EyeFilled style={{ paddingRight: '4px' }}/>114514</div>
             <a href={data.websiteUrl} target="_blank">
-                <img className={styles.port_work_img} onError={add404Img} src={data.imgUrl}></img>
+                <img className={dynamicStyle} onError={add404Img} src={data.imgUrl}></img>
             </a>
             <div>
                 <div className={styles.port_work_info_base}>
